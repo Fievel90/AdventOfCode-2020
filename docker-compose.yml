@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  adventofcode:
+    container_name: adventofcode
+    image: node:alpine
+    working_dir: /projects
+    volumes:
+      - ./:/projects
