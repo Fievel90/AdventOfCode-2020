@@ -5,8 +5,14 @@
   "scripts": {
     "test": "jest",
     "coverage": "jest --coverage",
-    "try": "node -r ./scripts/ts-node src/try.ts",
-    "day-1": "node -r ./scripts/ts-node src/index.ts day-1"
+    "day-1": "node -r ./scripts/ts-node src/index.ts day-1",
+    "day-2": "node -r ./scripts/ts-node src/index.ts day-2",
+    "day-3": "node -r ./scripts/ts-node src/index.ts day-3",
+    "day-4": "node -r ./scripts/ts-node src/index.ts day-4",
+    "day-5": "node -r ./scripts/ts-node src/index.ts day-5",
+    "day-6": "node -r ./scripts/ts-node src/index.ts day-6",
+    "day-7": "node -r ./scripts/ts-node src/index.ts day-7",
+    "try": "node -r ./scripts/ts-node src/try.ts"
   },
   "dependencies": {
     "@effect-ts/core": "^0.10.2",

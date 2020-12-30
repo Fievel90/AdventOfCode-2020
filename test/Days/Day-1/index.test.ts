@@ -3,7 +3,7 @@ import { task1 } from "@app/Days/Day-1";
 import { TooManyResultsError } from "@app/Days/Day-1/Error/TooManyResultsError";
 
 describe("Day-1", () => {
-  it("Should resolve exercise 1", async () => {
+  it("Should resolve exercise 1", () => {
     const result = task1.DailyTask.exercise1([
       "1721",
       "979",
@@ -16,7 +16,7 @@ describe("Day-1", () => {
     expect(result).toEqual(E.right(514579));
   });
 
-  it("Should resolve exercise 2", async () => {
+  it("Should resolve exercise 2", () => {
     const result = task1.DailyTask.exercise2([
       "1721",
       "979",
@@ -29,7 +29,7 @@ describe("Day-1", () => {
     expect(result).toEqual(E.right(241861950));
   });
 
-  it("Should fail exercise 1 on multiple entry sum to 2020", async () => {
+  it("Should fail exercise 1 on multiple entry sum to 2020", () => {
     const result = task1.DailyTask.exercise1([
       "1721",
       "979",
@@ -48,7 +48,7 @@ describe("Day-1", () => {
     );
   });
 
-  it("Should fail exercise 2 on multiple entry sum to 2020", async () => {
+  it("Should fail exercise 2 on multiple entry sum to 2020", () => {
     const result = task1.DailyTask.exercise2([
       "1721",
       "979",

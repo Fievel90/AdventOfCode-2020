@@ -49,7 +49,7 @@ describe.each(passes)("Day-5 - Boarding passes", (pass) => {
 });
 
 describe("Day-5", () => {
-  it("Should resolve exercise 1", async () => {
+  it("Should resolve exercise 1", () => {
     const result = task5.DailyTask.exercise1([
       "FBFBBFFRLR",
       "BFFFBBFRRR",
@@ -60,7 +60,7 @@ describe("Day-5", () => {
     expect(result).toEqual(E.right(820));
   });
 
-  it("Should resolve exercise 2", async () => {
+  it("Should resolve exercise 2", () => {
     const result = task5.DailyTask.exercise2([
       "FBFBBFFLLL",
       "FBFBBFFLLR",
@@ -75,7 +75,7 @@ describe("Day-5", () => {
     expect(result).toEqual(E.right(354));
   });
 
-  it("Should fail exercise 1 on invalid boarding pass", async () => {
+  it("Should fail exercise 1 on invalid boarding pass", () => {
     const result1 = task5.DailyTask.exercise1(["FBFBBFXRLR"]);
 
     expect(result1).toEqual(
@@ -89,7 +89,7 @@ describe("Day-5", () => {
     );
   });
 
-  it("Should fail exercise 2 on invalid boarding pass", async () => {
+  it("Should fail exercise 2 on invalid boarding pass", () => {
     const result1 = task5.DailyTask.exercise2(["FBFBBFXRLR"]);
 
     expect(result1).toEqual(
@@ -103,7 +103,7 @@ describe("Day-5", () => {
     );
   });
 
-  it("Should fail exercise 2 on multiple missing seats", async () => {
+  it("Should fail exercise 2 on multiple missing seats", () => {
     const result1 = task5.DailyTask.exercise2([
       "FBFBBFFLLL",
       "FBFBBFFLLR",

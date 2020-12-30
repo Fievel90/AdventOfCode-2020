@@ -2,7 +2,7 @@ import * as E from "@effect-ts/system/Either";
 import { task4 } from "@app/Days/Day-4";
 
 describe("Day-4", () => {
-  it("Should resolve exercise 1", async () => {
+  it("Should resolve exercise 1", () => {
     const result = task4.DailyTask.exercise1([
       "ecl:gry pid:860033327 eyr:2020 hcl:#fffffd",
       "byr:1937 iyr:2017 cid:147 hgt:183cm",
@@ -22,7 +22,7 @@ describe("Day-4", () => {
     expect(result).toEqual(E.right(2));
   });
 
-  it("Should resolve exercise 2", async () => {
+  it("Should resolve exercise 2", () => {
     const result = task4.DailyTask.exercise2([
       "eyr:1972 cid:100",
       "hcl:#18171d ecl:amb hgt:170 pid:186cm iyr:2018 byr:1926",
