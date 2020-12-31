@@ -28,7 +28,7 @@ interface PasswordPolicy {
   password: string;
 }
 
-export const task2: DailyTask = {
+export const task: DailyTask = {
   DailyTask: {
     exercise1: (params: string[]) =>
       calculate(params, (policy) => {

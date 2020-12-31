@@ -12,6 +12,7 @@
     "day-5": "node -r ./scripts/ts-node src/index.ts day-5",
     "day-6": "node -r ./scripts/ts-node src/index.ts day-6",
     "day-7": "node -r ./scripts/ts-node src/index.ts day-7",
+    "day-8": "node -r ./scripts/ts-node src/index.ts day-8",
     "try": "node -r ./scripts/ts-node src/try.ts"
   },
   "dependencies": {

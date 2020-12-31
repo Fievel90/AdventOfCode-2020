@@ -36,7 +36,7 @@ const calculate = (params: string[], { right, down }: Movement): number => {
   return trees;
 };
 
-export const task3: DailyTask = {
+export const task: DailyTask = {
   DailyTask: {
     exercise1: (params: string[]) =>
       pipe(

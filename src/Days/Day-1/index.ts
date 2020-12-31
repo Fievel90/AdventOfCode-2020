@@ -26,7 +26,7 @@ const calculate = (...a: number[][]) =>
     }
   );
 
-export const task1: DailyTask = {
+export const task: DailyTask = {
   DailyTask: {
     exercise1: (params: string[]) =>
       pipe(

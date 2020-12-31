@@ -56,7 +56,7 @@ const calculateExercise2 = (params: string[]) => pipe(
   E.right
 );
 
-export const task6: DailyTask = {
+export const task: DailyTask = {
   DailyTask: {
     exercise1: (params: string[]) => calculateExercise1(params),
     exercise2: (params: string[]) => calculateExercise2(params),

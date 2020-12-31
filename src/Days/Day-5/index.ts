@@ -134,7 +134,7 @@ const calculateMissingSeatID = (params: string[]) =>
     })
   );
 
-export const task5: DailyTask = {
+export const task: DailyTask = {
   DailyTask: {
     exercise1: (params: string[]) => calculateHighestSeatID(params),
     exercise2: (params: string[]) => calculateMissingSeatID(params),

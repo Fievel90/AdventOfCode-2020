@@ -1,9 +1,9 @@
 import * as E from "@effect-ts/system/Either";
-import { task3 } from "@app/Days/Day-3";
+import { task } from "@app/Days/Day-3";
 
 describe("Day-3", () => {
   it("Should resolve exercise 1", () => {
-    const result = task3.DailyTask.exercise1([
+    const result = task.DailyTask.exercise1([
       "..##.......",
       "#...#...#..",
       ".#....#..#.",
@@ -21,7 +21,7 @@ describe("Day-3", () => {
   });
 
   it("Should resolve exercise 2", () => {
-    const result = task3.DailyTask.exercise2([
+    const result = task.DailyTask.exercise2([
       "..##.......",
       "#...#...#..",
       ".#....#..#.",

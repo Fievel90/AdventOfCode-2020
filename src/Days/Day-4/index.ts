@@ -34,7 +34,7 @@ const createPassports = (params: string[]) =>
     )
   );
 
-export const task4: DailyTask = {
+export const task: DailyTask = {
   DailyTask: {
     exercise1: (params: string[]) =>
       pipe(

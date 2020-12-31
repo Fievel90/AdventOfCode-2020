@@ -1,6 +1,6 @@
 import * as E from "@effect-ts/system/Either";
 import {
-  task5,
+  task,
   calculateRow,
   calculateColumn,
   calculateSeat,
@@ -50,7 +50,7 @@ describe.each(passes)("Day-5 - Boarding passes", (pass) => {
 
 describe("Day-5", () => {
   it("Should resolve exercise 1", () => {
-    const result = task5.DailyTask.exercise1([
+    const result = task.DailyTask.exercise1([
       "FBFBBFFRLR",
       "BFFFBBFRRR",
       "FFFBBBFRRR",
@@ -61,7 +61,7 @@ describe("Day-5", () => {
   });
 
   it("Should resolve exercise 2", () => {
-    const result = task5.DailyTask.exercise2([
+    const result = task.DailyTask.exercise2([
       "FBFBBFFLLL",
       "FBFBBFFLLR",
       // Missing 1
@@ -76,13 +76,13 @@ describe("Day-5", () => {
   });
 
   it("Should fail exercise 1 on invalid boarding pass", () => {
-    const result1 = task5.DailyTask.exercise1(["FBFBBFXRLR"]);
+    const result1 = task.DailyTask.exercise1(["FBFBBFXRLR"]);
 
     expect(result1).toEqual(
       E.left(new FindSeatError("Unexpected rows count, expected only one."))
     );
 
-    const result2 = task5.DailyTask.exercise1(["FBFBBFFRLX"]);
+    const result2 = task.DailyTask.exercise1(["FBFBBFFRLX"]);
 
     expect(result2).toEqual(
       E.left(new FindSeatError("Unexpected columns count, expected only one."))
@@ -90,13 +90,13 @@ describe("Day-5", () => {
   });
 
   it("Should fail exercise 2 on invalid boarding pass", () => {
-    const result1 = task5.DailyTask.exercise2(["FBFBBFXRLR"]);
+    const result1 = task.DailyTask.exercise2(["FBFBBFXRLR"]);
 
     expect(result1).toEqual(
       E.left(new FindSeatError("Unexpected rows count, expected only one."))
     );
 
-    const result2 = task5.DailyTask.exercise2(["FBFBBFFRLX"]);
+    const result2 = task.DailyTask.exercise2(["FBFBBFFRLX"]);
 
     expect(result2).toEqual(
       E.left(new FindSeatError("Unexpected columns count, expected only one."))
@@ -104,7 +104,7 @@ describe("Day-5", () => {
   });
 
   it("Should fail exercise 2 on multiple missing seats", () => {
-    const result1 = task5.DailyTask.exercise2([
+    const result1 = task.DailyTask.exercise2([
       "FBFBBFFLLL",
       "FBFBBFFLLR",
       // Missing 2 continuous
@@ -120,7 +120,7 @@ describe("Day-5", () => {
       )
     );
 
-    const result2 = task5.DailyTask.exercise2([
+    const result2 = task.DailyTask.exercise2([
       "FBFBBFFLLL",
       "FBFBBFFLLR",
       // Missing 1

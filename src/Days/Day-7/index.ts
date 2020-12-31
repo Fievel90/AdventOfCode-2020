@@ -92,7 +92,7 @@ const countTotalBags = (needle: string, haystack: readonly Bag[]) => {
   return countBags(children);
 };
 
-export const task7: DailyTask = {
+export const task: DailyTask = {
   DailyTask: {
     exercise1: (params: string[]) => pipe(
       params,

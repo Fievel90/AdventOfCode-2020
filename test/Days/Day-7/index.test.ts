@@ -1,9 +1,9 @@
 import * as E from "@effect-ts/system/Either";
-import { task7 } from "@app/Days/Day-7";
+import { task } from "@app/Days/Day-7";
 
 describe("Day-7", () => {
   it("Should resolve exercise 1", () => {
-    const result = task7.DailyTask.exercise1([
+    const result = task.DailyTask.exercise1([
       'light red bags contain 1 bright white bag, 2 muted yellow bags.',
       'dark orange bags contain 3 bright white bags, 4 muted yellow bags.',
       'bright white bags contain 1 shiny gold bag.',
@@ -19,7 +19,7 @@ describe("Day-7", () => {
   });
 
   it("Should resolve exercise 2", () => {
-    const result1 = task7.DailyTask.exercise2([
+    const result1 = task.DailyTask.exercise2([
       'light red bags contain 1 bright white bag, 2 muted yellow bags.',
       'dark orange bags contain 3 bright white bags, 4 muted yellow bags.',
       'bright white bags contain 1 shiny gold bag.',
@@ -33,7 +33,7 @@ describe("Day-7", () => {
 
     expect(result1).toEqual(E.right(32));
 
-    const result2 = task7.DailyTask.exercise2([
+    const result2 = task.DailyTask.exercise2([
       'shiny gold bags contain 2 dark red bags.',
       'dark red bags contain 2 dark orange bags.',
       'dark orange bags contain 2 dark yellow bags.',
