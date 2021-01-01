@@ -40,6 +40,10 @@ const days = [
     input: "day-8",
     expected: [2025, 2001],
   },
+  {
+    input: "day-9",
+    expected: [15353384, 2466556],
+  },
 ];
 
 describe.each(days)("Program", (day) => {

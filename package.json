@@ -13,6 +13,11 @@
     "day-6": "node -r ./scripts/ts-node src/index.ts day-6",
     "day-7": "node -r ./scripts/ts-node src/index.ts day-7",
     "day-8": "node -r ./scripts/ts-node src/index.ts day-8",
+    "day-9": "node -r ./scripts/ts-node src/index.ts day-9",
+    "day-10": "node -r ./scripts/ts-node src/index.ts day-10",
+    "day-11": "node -r ./scripts/ts-node src/index.ts day-11",
+    "day-12": "node -r ./scripts/ts-node src/index.ts day-12",
+    "day-13": "node -r ./scripts/ts-node src/index.ts day-13",
     "try": "node -r ./scripts/ts-node src/try.ts"
   },
   "dependencies": {
